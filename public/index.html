@@ -1,0 +1,27 @@
+<!DOCTYPE>
+<html ng-app="myApp">
+
+<head>
+    <title>Contact List App</title>
+</head>
+
+<body>
+    <div class="container" ng-controller="AppCtrl">
+    
+    <table class="table">
+        <tbody>
+            <tr><input class="form-control" ng-model="title"/tr>
+            <tr><button class="btn btn-primary" ng-click="addList()">+ ADD</button></tr>
+            <tr ng-repeat="list in lists">
+                <td>{{list.title}}</td>
+                <td><button class="btn btn-danger" ng-click="remove(list._id)">DEL</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="controllers/controller.js"></script>
