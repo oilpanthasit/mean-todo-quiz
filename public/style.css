@@ -9,8 +9,8 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 10%;
-    background-color: #f1f1f1;
+    width: 9%;
+    background-color: #000;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -18,24 +18,68 @@ ul {
 
 li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color:white;
+     padding: 40px ;
     text-decoration: none;
+    background-color: #000;
+    text-align: center;
 }
 
 li a.active {
-    background-color: #4CAF50;
+    background-color: #00e68a;
     color: white;
+    padding: 40px ;
+    text-align: center;
 }
 
 #container {
-    
-    margin-left: 150px;
+   
+     margin-left: 250px;
+         /*margin-top: 300px;*/
   
 }
 
 #settingpage {
     
     margin-left: 150px;
-  
+      font-size: 150%;
+}
+
+input  {
+    width: 50%;
+     padding-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input.placeholder {
+    text-align: left;
+      margin: 21px;
+}
+
+.button {
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+}
+
+.add {background-color:white; color: black;} 
+.delete { border-color:red; background-color:white; color: red;} 
+
+td {
+    height: 50px;
+    width :84%;
+    vertical-align: center;
+    background-color: white;
 }
