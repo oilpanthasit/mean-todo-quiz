@@ -1,0 +1,19 @@
+
+    <div id ="container" ng-controller="AppCtrl">
+        <table class="table">
+            <tbody>
+                <tr><input class="form-control" ng-model="title" placeholder="Add Todo" /tr>
+                    <tr><button class="btn btn-primary" ng-click="addList()">+ ADD</button></tr>
+                    <tr ng-repeat="list in lists">
+                        <td>{{list.title}}</td>
+                        <td><button class="btn btn-danger" ng-click="remove(list._id)">DEL</button></td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+<script src="/libs/angular.js"></script>
+<script src="/libs/angular-route.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!--<script src="controllers/route.js"></script>-->
+<script src="controllers/controller.js"></script>
