@@ -83,3 +83,11 @@ td {
     background-color: white;
     
 }
+
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 25px;
+}
