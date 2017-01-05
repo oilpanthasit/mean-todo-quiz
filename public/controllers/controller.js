@@ -28,25 +28,7 @@ var myApp = angular
 
         $scope.remove = function(id) {
             console.log(id);
-            // var url = 'http://45.32.114.176:4600/todos/';
-
-            // $http.delete('http://45.32.114.176:4600/todos?' + id).then(function(response) {
-            //     console.log("DELETE");
-            //     refresh();
-            // }, function(error) {
-            //     console.log("ERROR DELETE");
-            // });
-            // $http({
-            //     url: 'http://45.32.114.176:4600/todos/',
-            //     method: "DELETE",
-            //     params: { id: id }
-            // })
-            axios.delete('http://45.32.114.176:4600/todos', {
-                method: 'DELETE',
-                params: {
-                    id: id
-                }
-            })
+            axios.delete('http://45.32.114.176:4600/todos/'+id)
                 .then(function(response) {
                     console.log(response);
                     refresh();
